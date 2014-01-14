@@ -1,0 +1,213 @@
+/*
+ * Colors
+ *
+ * Blue: #55acee
+ * Graphite: #66757f
+ * Graphite light: #99aab5
+ * Web topbar light: #c4e2f9
+ * iOS topbar: #54acef
+ * iOS topbar dark: #3886c1
+ * iOS topbar light: #88c9f9
+ */
+
+
+/*
+ * Global focus state
+ */
+
+.selected-stream-item:focus {
+  box-shadow: none !important;
+}
+
+
+/*
+ * Inverted topbar
+ */
+
+/* Tweak the borders */
+.topbar,
+.global-nav {
+  border-bottom: 0;
+}
+.global-nav-inner {
+  background-color: #55acee;
+}
+
+/* Container should go full width */
+.global-nav .container {
+  max-width: none;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+/* Bird */
+.bird-topbar-etched {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -12px;
+  color: #fff !important;
+}
+
+/* Nav */
+#global-actions > li > a {
+  color: #fff !important;
+  border: 0 !important;
+  height: auto !important;
+  transition: none !important;
+}
+#global-actions > li:hover > a {
+  color: #c4e2f9 !important;
+}
+#global-actions > li.active > a,
+#global-actions > li.active:hover > a {
+  color: #fff !important;
+}
+
+/* Neutralize the unread nav indicator */
+#global-actions .new:before {
+  color: #fff;
+}
+
+/* Tweak the DM and settings nav links to match */
+.global-nav .pull-right .right-actions {
+  margin-right: -5px;
+}
+.nav.right-actions > li > a, 
+.nav.right-actions > li > button {
+  color: #fff !important;
+  opacity: 1 !important;
+}
+.nav.right-actions > li > a:hover, 
+.nav.right-actions > li > button:hover, 
+.nav.right-actions > li > a:focus,
+.nav.right-actions > li > button:focus {
+  color: #c4e2f9 !important;
+}
+#global-new-tweet-button {
+  color: #fff !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  opacity: 1 !important;
+}
+#global-new-tweet-button:hover {
+  color: #c4e2f9 !important;
+}
+
+/* Search field */
+.global-nav .form-search .search-input {
+  font-size: 13px !important;
+  color: #55acee !important;
+  background-color: #3886c1 !important;
+}
+
+
+/* Make body match topbar */
+body {
+  background-color: #fff !important;
+}
+.wrapper,
+.wrapper-narrow {
+  padding-top: 60px !important;
+}
+
+
+/*
+ * Sidebar modules
+ *
+ * Scoped to .dashboard to avoid interference with modal modules.
+ */
+
+.dashboard .module {
+  border: 1px solid rgba(0,0,0,.1) !important;
+}
+.dashboard .module .flex-module {
+  border: 0 !important;
+}
+
+/* Profile */
+.mini-profile {
+  position: relative;
+  padding-top: 190px;
+}
+.mini-profile .profile-summary {
+  position: absolute !important;
+  top: -1px !important;
+  left: -1px !important;
+  right: -1px !important;
+  background-color: transparent !important;
+}
+
+.home-tweet-box, 
+.rosetta .dm-tweetbox, 
+.rosetta .WebNotification-buffer--altColor, 
+.content-main .conversations-enabled .expansion-container .inline-reply-tweetbox {
+  background-color: #f9f9f9 !important;
+}
+.home-tweet-box {
+  border-top: 1px solid #eee;
+}
+.tweet-box[contenteditable="true"] {
+  border-color: #ddd;
+}
+
+/* Outright hide WTF */
+.dashboard .wtf-module {
+  display: none;
+}
+
+/* Nav links */
+.module .list-link,
+.search-more-options .btn-link {
+  border: 0 !important;
+}
+.module .js-nav-links > li + li .list-link {
+  border-top: 1px solid #eee !important;
+}
+
+/* Stats (for dashboard and mini profiles) */
+.stats {
+  margin-left: 1px;
+  margin-right: 1px;
+  border: 0 !important;
+  background-color: transparent !important;
+}
+.stats a {
+  color: #99aab5 !important;
+}
+.stats a strong {
+  color: #66757f !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 1 !important;
+}
+
+
+
+/*
+ * Main content area
+ */
+
+.content-header,
+.content-no-header,
+.stream-item, 
+.stream-item.open, 
+.unfocusable-stream-item {
+  border-color: rgba(0,0,0,.1) !important;
+}
+
+/* Tweet actions */
+.tweet-actions b {
+  display: none !important;
+}
+
+
+/* 
+ * Modals
+ */
+
+.modal-header,
+.gallery-container .modal-header {
+  background-image: none !important;
+  border-bottom: 0 !important;
+}
