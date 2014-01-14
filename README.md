@@ -1,6 +1,6 @@
 # Twitter Userstyle
 
-Bring the aesthetic of Twitter for iOS to [Twitter.com](https://twitter.com) with this custom userstyle.
+Bring the aesthetic of Twitter for iOS to the [newly updated Twitter.com](https://twitter.com/twitter/status/422840296175443968) with this custom userstyle.
 
 ![](https://f.cloud.github.com/assets/98681/1916136/d21eaee0-7d72-11e3-8ca0-3983be1efe26.png)
 
