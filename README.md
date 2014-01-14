@@ -11,6 +11,7 @@ Bring the aesthetic of Twitter for iOS to [Twitter.com](https://twitter.com) wit
 * Changes the stats design to look closer to iOS.
 * Fixes the inconsistent border colors by using the same color across the board.
 * Makes the topbar full-width instead of being slightly wider than the content.
+* Outright hides the Who to Follow widget those avatars are quite large and the buttons' text is misaligned.
 
 ### Why
 
