@@ -12,7 +12,17 @@
 
 
 /*
- * Global focus state
+ * Globals
+ */
+
+/* Prevent user backgrounds */
+body {
+  background-image: none !important;
+  background-color: #fff !important;
+}
+
+/*
+ * Undo overzealous focus state
  */
 
 .selected-stream-item:focus {
