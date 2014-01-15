@@ -21,7 +21,7 @@ Bring the aesthetic of Twitter for iOS to the [newly updated Twitter.com](https:
 
 More than anything else, this is an hour-long experiment that I decided to open source. I enjoy using Twitter's native apps and believe the same design can work on all platforms.
 
-Beyond that, I think (and hope) Twitter can grow to longer support user themes or customizations (beyond profile avatars and headers) without sacrificing the  overall experience or utility. So far, I'm enjoying it.
+Beyond that, I think (and hope) Twitter can grow to no longer support user themes or customizations (beyond profile avatars and headers) without sacrificing the overall experience or utility. So far, I'm enjoying it.
 
 
 ## Todo
