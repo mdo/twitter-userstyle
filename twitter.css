@@ -4,6 +4,7 @@
  * Blue: #55acee
  * Graphite: #66757f
  * Graphite light: #99aab5
+ * Graphite lighter: #ccd6dd
  * Web topbar light: #c4e2f9
  *
  * iOS topbar: #54acef
@@ -282,18 +283,17 @@ body {
   background-color: transparent !important;
   box-shadow: none !important;
 }
-.tweet-actions a {
+.tweet-actions a,
+.tweet-actions .btn-link {
   margin-left: 0 !important;
   padding: 3px 10px !important;
+  color: #ccd6dd !important;
 }
-.light-inline-actions .tweet:hover .tweet-actions a, 
-.light-inline-actions .tweet:hover .action-more-container .btn-link, 
-.light-inline-actions .selected-stream-item .tweet .tweet-actions a, 
-.light-inline-actions .selected-stream-item .tweet .action-more-container .btn-link, 
-.light-inline-actions .tweet.focus .tweet-actions a, 
-.light-inline-actions .tweet.focus .action-more-container .btn-link {
-  color: #99aab5 !important;
+.tweet:hover .tweet-actions a,
+.tweet:hover .tweet-actions .btn-link {
+  color: #99aab5 !important; 
 }
+
 /* Hide the text */
 .tweet-actions b {
   display: none !important;
