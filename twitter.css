@@ -10,8 +10,9 @@
  * iOS topbar dark: #3886c1
  * iOS topbar light: #88c9f9
  *
- * Retweet green: #77B255
- * Favorite orange: #ffac33
+ * Retweet (green): #77B255
+ * Favorite (orange): #ffac33
+ * iOS Favorite (yellow): #ffcc4d
  */
 
 
@@ -343,6 +344,7 @@ body {
 .activity-type .Icon--favorited:before,
 .context .with-icn .Icon--favorited:before {
   content: "\f147" !important;
+  color: #ffcc4d;
 }
 .activity-type .Icon--follower:before,
 .context .with-icn .Icon--follower:before {
