@@ -22,8 +22,27 @@
 /* Prevent user backgrounds */
 body {
   background-image: none !important;
-  background-color: #fff !important;
+  background-color: #fafafa !important;
 }
+
+
+/*
+ * Buttons
+ */
+
+.btn:not(.plain-btn) {
+  color: #fff !important;
+  background-color: #55acee !important;
+  background-image: none !important;
+  border-color: #55acee !important;
+}
+.btn:focus {
+  box-shadow: none !important;
+}      
+.btn .Icon {
+  color: inherit !important;
+}
+
 
 /*
  * Undo overzealous focus state
@@ -67,7 +86,7 @@ body {
 #global-actions > li > a {
   color: #fff !important;
   border: 0 !important;
-  height: auto !important;
+  height: 46px !important;
   transition: none !important;
 }
 #global-actions > li:hover > a {
@@ -112,15 +131,15 @@ body {
 .global-nav .form-search .search-input {
   font-size: 13px !important;
   line-height: 18px !important; /* Vertically center the text */
-  color: #55acee !important;
+  color: #81c1f2 !important;
   background-color: #3886c1 !important;
+  opacity: 1 !important;
 }
-
+.global-nav .form-search .search-input:placeholder {
+  color: #81c1f2 !important;
+}
 
 /* Make body match topbar */
-body {
-  background-color: #fff !important;
-}
 .wrapper,
 .wrapper-narrow {
   padding-top: 60px !important;
@@ -134,6 +153,7 @@ body {
  */
 
 .dashboard .module {
+  background-color: #fff !important;
   border: 1px solid rgba(0,0,0,.1) !important;
 }
 .dashboard .module .flex-module {
@@ -197,6 +217,27 @@ body {
   line-height: 1 !important;
 }
 
+/* Make dashboard stats equal width */
+.dashboard .stats {
+  display: table !important;
+  table-layout: fixed !important;
+  width: 100% !important;
+  padding: 0 !important;
+}
+.dashboard .stats li {
+  display: table-cell !important;
+  width: 1% !important;
+  float: none !important;
+  margin: 0 !important;
+}
+.dashboard .stats li a {
+  display: block !important;
+  float: none !important;
+  padding: 8px 10px !important;
+}
+.dashboard .stats li + li {
+  border-left: 1px solid #eee !important;
+}
 
 
 /*
@@ -215,23 +256,54 @@ body {
 .tweet {
   border-bottom-color: #eee !important;
 }
+.tweet .stream-item-footer {
+  min-height: 24px !important;
+}
 .content-main .expansion-container .tweet.ancestor, 
 .content-main .expansion-container .tweet.descendant, 
 .content-main .expansion-container .view-more-container, 
 .content-main .expansion-container .inline-reply-tweetbox,
 .original-tweet:hover,
-.original-tweet:hover .tweet-actions,
 .conversation-module .conversation-tweet-item .tweet:hover {
   background-color: #f9f9f9 !important;
 }
 .open .tweet:hover,
-.original-tweet-container .original-tweet,
-.original-tweet-container .original-tweet:hover .tweet-actions {
+.original-tweet-container .original-tweet {
   background-color: #fff !important;
 }
 
 /* Tweet actions */
+.tweet-actions {
+  position: static !important;
+  float: left !important;
+  padding-left: 0 !important;
+  margin-left: -10px !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.tweet-actions a {
+  margin-left: 0 !important;
+  padding: 3px 10px !important;
+}
+.light-inline-actions .tweet:hover .tweet-actions a, 
+.light-inline-actions .tweet:hover .action-more-container .btn-link, 
+.light-inline-actions .selected-stream-item .tweet .tweet-actions a, 
+.light-inline-actions .selected-stream-item .tweet .action-more-container .btn-link, 
+.light-inline-actions .tweet.focus .tweet-actions a, 
+.light-inline-actions .tweet.focus .action-more-container .btn-link {
+  color: #99aab5 !important;
+}
+/* Hide the text */
 .tweet-actions b {
+  display: none !important;
+}
+/* Twerk the icons */
+.tweet .tweet-actions .Icon {
+  font-size: 14px !important;
+}
+
+/* Hide the details to make room for the tweet actions */
+.tweet .details {
   display: none !important;
 }
 
@@ -264,14 +336,23 @@ body {
   width: 16px !important;
   text-align: center !important;
 }
-.activity-type .Icon--retweeted:before {
+.activity-type .Icon--retweeted:before,
+.context .with-icn .Icon--retweeted:before {
   content: "\f152" !important;
 }
-.activity-type .Icon--favorited:before {
+.activity-type .Icon--favorited:before,
+.context .with-icn .Icon--favorited:before {
   content: "\f147" !important;
 }
-.activity-type .Icon--follower:before {
+.activity-type .Icon--follower:before,
+.context .with-icn .Icon--follower:before {
   content: "\f056" !important;
+}
+
+/* Permalinks */
+.inline-reply-tweetbox,
+.modal-content .activity-content .stream-item {
+  background-color: #f9f9f9 !important;
 }
 
 
