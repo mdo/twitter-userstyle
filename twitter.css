@@ -206,9 +206,40 @@ body {
   border-color: rgba(0,0,0,.1) !important;
 }
 
+/* Tweets */
+.tweet {
+  border-bottom-color: #eee !important;
+}
+.tweet:hover {
+  background-color: #f9f9f9 !important;
+}
+.open .tweet:hover {
+  background-color: #fff !important;
+}
+
 /* Tweet actions */
 .tweet-actions b {
   display: none !important;
+}
+
+/* Reapply tweet stats borders */
+.tweet .stats {
+  border-top: 1px solid #eee !important;
+  border-bottom: 1px solid #eee !important;
+}
+
+/* Hide the inline replies caret */
+.inline-reply-caret {
+  display: none !important;
+}
+
+/* Line */
+.vellip, 
+.vellip:before, 
+.vellip:after, 
+.conversation-module > li:after, 
+.conversation-module > li:before {
+  background-color: #99aab5 !important;
 }
 
 
