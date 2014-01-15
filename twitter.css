@@ -37,25 +37,25 @@ body {
 /* Tweak the borders */
 .topbar,
 .global-nav {
-  border-bottom: 0;
+  border-bottom: 0 !important;
 }
 .global-nav-inner {
-  background-color: #55acee;
+  background-color: #55acee !important;
 }
 
 /* Container should go full width */
 .global-nav .container {
-  max-width: none;
-  padding-left: 10px;
-  padding-right: 5px;
+  max-width: none !important;
+  padding-left: 10px !important;
+  padding-right: 5px !important;
 }
 
 /* Bird */
 .bird-topbar-etched {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: -12px;
+  position: absolute !important;
+  top: 0 !important;
+  left: 50% !important;
+  margin-left: -12px !important;
   color: #fff !important;
 }
 
@@ -76,12 +76,12 @@ body {
 
 /* Neutralize the unread nav indicator */
 #global-actions .new:before {
-  color: #fff;
+  color: #fff !important;
 }
 
 /* Tweak the DM and settings nav links to match */
 .global-nav .pull-right .right-actions {
-  margin-right: -5px;
+  margin-right: -5px !important;
 }
 .nav.right-actions > li > a, 
 .nav.right-actions > li > button {
@@ -107,6 +107,7 @@ body {
 /* Search field */
 .global-nav .form-search .search-input {
   font-size: 13px !important;
+  line-height: 18px !important; /* Vertically center the text */
   color: #55acee !important;
   background-color: #3886c1 !important;
 }
@@ -155,15 +156,15 @@ body {
   background-color: #f9f9f9 !important;
 }
 .home-tweet-box {
-  border-top: 1px solid #eee;
+  border-top: 1px solid #eee !important;
 }
 .tweet-box[contenteditable="true"] {
-  border-color: #ddd;
+  border-color: #ddd !important;
 }
 
 /* Outright hide WTF */
 .dashboard .wtf-module {
-  display: none;
+  display: none !important;
 }
 
 /* Nav links */
@@ -177,8 +178,8 @@ body {
 
 /* Stats (for dashboard and mini profiles) */
 .stats {
-  margin-left: 1px;
-  margin-right: 1px;
+  margin-left: 1px !important;
+  margin-right: 1px !important;
   border: 0 !important;
   background-color: transparent !important;
 }
@@ -210,10 +211,18 @@ body {
 .tweet {
   border-bottom-color: #eee !important;
 }
-.tweet:hover {
+.content-main .expansion-container .tweet.ancestor, 
+.content-main .expansion-container .tweet.descendant, 
+.content-main .expansion-container .view-more-container, 
+.content-main .expansion-container .inline-reply-tweetbox,
+.original-tweet:hover,
+.original-tweet:hover .tweet-actions,
+.conversation-module .conversation-tweet-item .tweet:hover {
   background-color: #f9f9f9 !important;
 }
-.open .tweet:hover {
+.open .tweet:hover,
+.original-tweet-container .original-tweet,
+.original-tweet-container .original-tweet:hover .tweet-actions {
   background-color: #fff !important;
 }
 
