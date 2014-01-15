@@ -1,0 +1,13 @@
+{
+    "name": "Twitter Userstyle",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "Unofficial Twitter theme created by Mark Otto (@mdo)",
+    "homepage_url": "https://github.com/mdo/twitter-userstyle",
+    "content_scripts": [
+        {
+            "matches": ["https://twitter.com/*"],
+            "css": ["twitter.css"]
+        }
+    ]
+}
