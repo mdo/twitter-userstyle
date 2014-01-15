@@ -5,9 +5,13 @@
  * Graphite: #66757f
  * Graphite light: #99aab5
  * Web topbar light: #c4e2f9
+ *
  * iOS topbar: #54acef
  * iOS topbar dark: #3886c1
  * iOS topbar light: #88c9f9
+ *
+ * Retweet green: #77B255
+ * Favorite orange: #ffac33
  */
 
 
@@ -249,6 +253,25 @@ body {
 .conversation-module > li:after, 
 .conversation-module > li:before {
   background-color: #99aab5 !important;
+}
+
+/* Don't use inverted icons for Activity feed */
+.stream-item-activity-me .activity-type {
+  top: 9px !important;
+}
+.activity-type .Icon {
+  font-size: 14px !important;
+  width: 16px !important;
+  text-align: center !important;
+}
+.activity-type .Icon--retweeted:before {
+  content: "\f152" !important;
+}
+.activity-type .Icon--favorited:before {
+  content: "\f147" !important;
+}
+.activity-type .Icon--follower:before {
+  content: "\f056" !important;
 }
 
 
