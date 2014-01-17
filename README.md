@@ -2,7 +2,7 @@
 
 Bring the aesthetic of Twitter for iOS to the [newly updated Twitter.com](https://twitter.com/twitter/status/422840296175443968) with this custom userstyle.
 
-![](https://f.cloud.github.com/assets/98681/1918234/2aa7c386-7db8-11e3-8dbf-4e23375fc217.png)
+![](https://f.cloud.github.com/assets/98681/1937508/b8618f62-7f26-11e3-8a87-f8c8373d61c3.png)
 
 
 ## What changes
