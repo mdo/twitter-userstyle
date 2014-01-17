@@ -27,12 +27,46 @@ body {
   background-color: #fafafa !important;
 }
 
+/*
+ * Reset theme styles
+ */
+
+/* Link colors */
+a, .btn-link, .btn-link:focus, .icon-btn, .pretty-link b, .pretty-link:hover s, .pretty-link:hover b, .pretty-link:focus s, .pretty-link:focus b, .metadata a:hover, .metadata a:focus, .account-group:hover .fullname, .account-group:focus .fullname, .account-summary:focus .fullname, .message .message-text a, .stats a strong, .plain-btn:hover, .plain-btn:focus, .dropdown.open .user-dropdown.plain-btn, .open > .plain-btn, #global-actions .new:before, .module .list-link:hover, .module .list-link:focus, .stats a:hover, .stats a:hover strong, .stats a:focus, .stats a:focus strong, .profile-modal-header .fullname a:hover, .profile-modal-header .username a:hover, .profile-modal-header .fullname a:focus, .profile-modal-header .username a:focus, .story-article:hover .metadata, .story-article .metadata a:focus, .find-friends-sources li:hover .source, .stream-item a:hover .fullname, .stream-item a:focus .fullname, .stream-item .view-all-supplements:hover, .stream-item .view-all-supplements:focus, .tweet .time a:hover, .tweet .time a:focus, .tweet-actions a, .tweet .details.with-icn b, .tweet .details.with-icn .Icon, .stream-item:hover .original-tweet .expand-action-wrapper, .stream-item .original-tweet.focus .expand-action-wrapper, .opened-tweet.original-tweet .expand-action-wrapper, .stream-item:hover .original-tweet .details b, .stream-item .original-tweet.focus .details b, .stream-item.open .original-tweet .details b, .simple-tweet:hover .details b, .simple-tweet.focus .details b, .simple-tweet.open .details b, .simple-tweet:hover .details .expand-action-wrapper, .simple-tweet.focus .details .expand-action-wrapper, .simple-tweet.open .details .collapse-action-wrapper, .simple-tweet:hover .details .simple-details-link, .simple-tweet.focus .details .simple-details-link, .client-and-actions a:hover, .client-and-actions a:focus, .dismiss-promoted:hover b, .tweet .context .pretty-link:hover s, .tweet .context .pretty-link:hover b, .tweet .context .pretty-link:focus s, .tweet .context .pretty-link:focus b, .list .username a:hover, .list .username a:focus, .list-membership-container .create-a-list, .list-membership-container .create-a-list:hover, .story-header:hover .view-tweets, .card .list-details a:hover, .card .list-details a:focus, .card .card-body:hover .attribution, .card .card-body .attribution:focus, .events-card .card-body:hover .attribution, .events-card .card-body .attribution:focus, .new-tweets-bar, .onebox .soccer ul.ticker a:hover, .onebox .soccer ul.ticker a:focus, .discover-item-actions a, .disco-stream-item.disco_exp_actions_on_btm .more-tweet-actions .btn-link, .disco-stream-item.disco_exp_actions_on_btm_without_stats .more-tweet-actions .btn-link, .remove-background-btn, .stream-item-activity-me .latest-tweet .tweet-row a:hover, .stream-item-activity-me .latest-tweet .tweet-row a:focus, .stream-item-activity-me .latest-tweet .tweet-row a:hover b, .stream-item-activity-me .latest-tweet .tweet-row a:focus b
+{
+  color: #3886c1 !important;
+}
+s, .pretty-link:hover s, .pretty-link:focus s, .stream-item-activity-me .latest-tweet .tweet-row a:hover s, .stream-item-activity-me .latest-tweet .tweet-row a:focus s {
+ color: inherit !important;
+}
+
+/* Undo the overrides of the giant block above */
+.tweet .context .pretty-link s,
+.tweet .context .pretty-link b,
+.Footer-link {
+  color: #999 !important;
+}
+.profile-header .profile-card-inner h1,
+.profile-header .profile-card-inner h2,
+.profile-header .profile-card-inner p,
+.profile-header .profile-card-inner s,
+.profile-header .profile-card-inner a,
+.profile-header .profile-card-inner a b,
+.profile-header .profile-card-inner a:hover s,
+.profile-header .profile-card-inner a:hover b,
+.enhanced-mini-profile .mini-profile .profile-summary a:hover .fullname,
+.enhanced-mini-profile .mini-profile .profile-summary a:hover .screen-name {
+  color: #fff !important;
+}
+
 
 /*
  * Buttons
  */
 
-.btn:not(.plain-btn) {
+/* Commented out for now while I work on improving this stuff
+
+.btn:not(.plain-btn):not(.follow-button) {
   color: #fff !important;
   background-color: #55acee !important;
   background-image: none !important;
@@ -40,10 +74,11 @@ body {
 }
 .btn:focus {
   box-shadow: none !important;
-}      
+}
 .btn .Icon {
   color: inherit !important;
 }
+*/
 
 
 /*
@@ -53,6 +88,31 @@ body {
 .selected-stream-item:focus {
   box-shadow: none !important;
 }
+
+
+/*
+ * Undo blocks of accent color bullshit
+ */
+
+.username {
+  color: #99aab5 !important;
+}
+.time,
+.time a,
+.metadata,
+.metadata button.btn-link,
+.metadata a {
+  color: #ccd6dd !important;
+}
+.username:hover,
+.time:hover,
+.time a:hover,
+.metadata:hover,
+.metadata button.btn-link:hover,
+.metadata a:hover {
+  color: #55acee !important;
+}
+
 
 
 /*
@@ -86,13 +146,13 @@ body {
 
 /* Nav */
 #global-actions > li > a {
-  color: #fff !important;
+  color: #c4e2f9 !important;
   border: 0 !important;
   height: 46px !important;
-  transition: none !important;
+  transition: all .1s ease-in-out !important;
 }
 #global-actions > li:hover > a {
-  color: #c4e2f9 !important;
+  color: #fff !important;
 }
 #global-actions > li.active > a,
 #global-actions > li.active:hover > a {
@@ -108,26 +168,48 @@ body {
 .global-nav .pull-right .right-actions {
   margin-right: -5px !important;
 }
-.nav.right-actions > li > a, 
+.nav.right-actions > li > a,
 .nav.right-actions > li > button {
-  color: #fff !important;
+  color: #c4e2f9 !important;
   opacity: 1 !important;
 }
-.nav.right-actions > li > a:hover, 
-.nav.right-actions > li > button:hover, 
+.nav.right-actions > li > a:hover,
+.nav.right-actions > li > button:hover,
 .nav.right-actions > li > a:focus,
 .nav.right-actions > li > button:focus {
-  color: #c4e2f9 !important;
-}
-#global-new-tweet-button {
   color: #fff !important;
+}
+
+/* DM unread */
+.global-dm-nav.new.with-count .dm-new {
+  background-color: #54acef !important;
+}
+
+/* Normalize the DM and Settings icons */
+.nav.right-actions > li > a,
+.nav.right-actions > li > button {
+  /* Undo the `height: 100%;` and manually reset it to 46px so that tooltips for each link are properly aligned. */
+  height: 46px !important;
+}
+/* Undo the line-height that's added to only the DM icon, which overrides the original `line-height` that's been set on the icon base class. */
+.nav.right-actions .global-dm-nav .Icon {
+  line-height: 1 !important;
+}
+
+/* Restyle the new tweet icon to blend into the topbar */
+#global-new-tweet-button {
+  margin-top: 0 !important;
+  padding: 0 !important;
+  color: #c4e2f9 !important;
   background-color: transparent !important;
   background-image: none !important;
+  border: 0 !important;
   opacity: 1 !important;
 }
 #global-new-tweet-button:hover {
-  color: #c4e2f9 !important;
+  color: #fff !important;
 }
+
 
 /* Search field */
 .global-nav .form-search .search-input {
@@ -145,6 +227,17 @@ body {
 .wrapper,
 .wrapper-narrow {
   padding-top: 60px !important;
+  /* Undo the now pointless side padding here since the white/black wash is gone */
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+/* Widen the .wrapper to make the gutter betwee dashboard and main content 14px, which then equals the padding adjusted padding between topbar and content (60px above). */
+.wrapper {
+  width: 894px !important;
+}
+/* Reiterate to keep permalinks from becoming too wide */
+.wrapper-permalink {
+  width: 592px !important;
 }
 
 
@@ -154,18 +247,19 @@ body {
  * Scoped to .dashboard to avoid interference with modal modules.
  */
 
-.dashboard .module {
+.module {
+  margin-bottom: 14px !important; /* Match gutters between dashboard and main content */
   background-color: #fff !important;
   border: 1px solid rgba(0,0,0,.1) !important;
 }
-.dashboard .module .flex-module {
+.module .flex-module {
   border: 0 !important;
 }
 
 /* Profile */
 .mini-profile {
-  position: relative;
-  padding-top: 190px;
+  position: relative !important;
+  padding-top: 190px !important;
 }
 .mini-profile .profile-summary {
   position: absolute !important;
@@ -175,9 +269,9 @@ body {
   background-color: transparent !important;
 }
 
-.home-tweet-box, 
-.rosetta .dm-tweetbox, 
-.rosetta .WebNotification-buffer--altColor, 
+.home-tweet-box,
+.rosetta .dm-tweetbox,
+.rosetta .WebNotification-buffer--altColor,
 .content-main .conversations-enabled .expansion-container .inline-reply-tweetbox {
   background-color: #f9f9f9 !important;
 }
@@ -202,6 +296,26 @@ body {
   border-top: 1px solid #eee !important;
 }
 
+/* Make nav links gray instead of link color */
+.module .list-link,
+.search-more-options .btn-link {
+  color: #99aab5 !important;
+}
+.module .list-link .Icon--caretRight,
+.search-more-options .btn-link .Icon--caretRight {
+  opacity: .5 !important;
+}
+/* Overrides for active state */
+.module .active .list-link,
+.search-more-options .active .btn-link {
+  color: #66757f !important;
+}
+.module .list-link .active .Icon--caretRight,
+.search-more-options .active .btn-link .Icon--caretRight {
+  opacity: 1 !important;
+}
+
+
 /* Stats (for dashboard and mini profiles) */
 .stats {
   margin-left: 1px !important;
@@ -213,10 +327,15 @@ body {
   color: #99aab5 !important;
 }
 .stats a strong {
+  padding-top: 2px !important;
   color: #66757f !important;
   font-size: 14px !important;
   font-weight: 500 !important;
   line-height: 1 !important;
+}
+.stats a:hover,
+.stats a:hover strong {
+  color: #55acee !important;
 }
 
 /* Make dashboard stats equal width */
@@ -235,7 +354,8 @@ body {
 .dashboard .stats li a {
   display: block !important;
   float: none !important;
-  padding: 8px 10px !important;
+  padding: 10px !important;
+  line-height: 1 !important;
 }
 .dashboard .stats li + li {
   border-left: 1px solid #eee !important;
@@ -248,22 +368,55 @@ body {
 
 .content-header,
 .content-no-header,
-.stream-item, 
-.stream-item.open, 
+.stream-item,
+.stream-item.open,
 .unfocusable-stream-item {
   border-color: rgba(0,0,0,.1) !important;
 }
 
-/* Tweets */
+/* New tweets loading bar */
+.new-tweets-bar {
+  margin-right: -1px !important;
+  margin-left: -1px !important;
+  font-weight: 500 !important;
+  color: #fff !important;
+  background-color: #54acef !important;
+  border-color: #54acef !important;
+  transition: all .1s ease-in-out;
+}
+.new-tweets-bar:hover {
+  background-color: #3886c1 !important;
+  border-color: #3886c1 !important;
+}
+
+
+/*
+ * Tweets
+ */
+
 .tweet {
   border-bottom-color: #eee !important;
 }
-.tweet .stream-item-footer {
-  min-height: 24px !important;
+
+/* Move the time back to the right */
+.tweet .time {
+  float: right !important;
 }
-.content-main .expansion-container .tweet.ancestor, 
-.content-main .expansion-container .tweet.descendant, 
-.content-main .expansion-container .view-more-container, 
+/* Hide the bullet before the timestamp */
+.tweet .time:before {
+  display: none !important;
+}
+
+.tweet .stream-item-footer {
+  max-height: 24px !important;
+}
+.tweet .bottom-tweet-actions {
+  height: 24px !important;
+  margin-top: 5px !important;
+}
+.content-main .expansion-container .tweet.ancestor,
+.content-main .expansion-container .tweet.descendant,
+.content-main .expansion-container .view-more-container,
 .content-main .expansion-container .inline-reply-tweetbox,
 .original-tweet:hover,
 .conversation-module .conversation-tweet-item .tweet:hover {
@@ -277,7 +430,7 @@ body {
 /* Tweet actions */
 .tweet-actions {
   position: static !important;
-  float: left !important;
+  float: none !important;
   padding-left: 0 !important;
   margin-left: -10px !important;
   background-color: transparent !important;
@@ -291,7 +444,13 @@ body {
 }
 .tweet:hover .tweet-actions a,
 .tweet:hover .tweet-actions .btn-link {
-  color: #99aab5 !important; 
+  color: #99aab5 !important;
+}
+
+/* Recolor the favorited Favorite star */
+.favorited .Icon--favorite,
+.Icon--favorited {
+  color: #ffcc4d !important;
 }
 
 /* Hide the text */
@@ -304,7 +463,8 @@ body {
 }
 
 /* Hide the details to make room for the tweet actions */
-.tweet .details {
+.tweet .details,
+.client-and-actions {
   display: none !important;
 }
 
@@ -320,10 +480,10 @@ body {
 }
 
 /* Line */
-.vellip, 
-.vellip:before, 
-.vellip:after, 
-.conversation-module > li:after, 
+.vellip,
+.vellip:before,
+.vellip:after,
+.conversation-module > li:after,
 .conversation-module > li:before {
   background-color: #99aab5 !important;
 }
@@ -344,7 +504,7 @@ body {
 .activity-type .Icon--favorited:before,
 .context .with-icn .Icon--favorited:before {
   content: "\f147" !important;
-  color: #ffcc4d;
+  color: #ffcc4d !important;
 }
 .activity-type .Icon--follower:before,
 .context .with-icn .Icon--follower:before {
@@ -357,13 +517,80 @@ body {
   background-color: #f9f9f9 !important;
 }
 
+/* Hide Promoted tweets */
+.promoted-tweet {
+  display: none !important;
+}
 
-/* 
+
+/*
+ * Inline content
+ */
+
+/* Vine */
+.with-media-forward .expanded-content .card2 {
+  position: relative;
+  height: 215px !important;
+  margin-top: 10px !important;
+}
+.with-media-forward.opened-tweet .expanded-content .card2 {
+  height: auto !important;
+}
+.with-media-forward .expanded-content .card2 .media-preview {
+  top: 0 !important;
+}
+
+
+/*
  * Modals
  */
 
 .modal-header,
 .gallery-container .modal-header {
   background-image: none !important;
-  border-bottom: 0 !important;
+  /* Prevent accent color */
+  border-bottom-color: #eee !important;
+}
+.modal .module {
+  border: 0 !important;
+}
+
+/* New tweet modal */
+#global-tweet-dialog .modal-footer {
+  /* Prevent accent color */
+  background-color: #f5f5f5 !important;
+}
+
+
+/*
+ * Profile page
+ */
+
+/* Enable header image to be positioned absolutely so that it overlays the module border */
+.profile-card.profile-header {
+  position: relative !important;
+  width: 588px !important; /* Make it match the width of the tweets */
+  padding-top: 295px !important; /* Create empty space for the positioned profile header */
+}
+/* Re-position the header image to overlay the module border */
+.profile-card.profile-header .profile-header-inner {
+  position: absolute !important;
+  top: -1px !important;
+  right: -1px !important;
+  left: -1px !important;
+  margin-bottom: 0 !important;
+}
+
+/* Reset the profile header in a modal */
+#profile_popup-dialog .profile-card.profile-header {
+  width: 520px !important;
+  padding-top: 0 !important;
+}
+#profile_popup-dialog .profile-card.profile-header .profile-header-inner {
+  position: static !important;
+}
+
+/* Hide tweet actions in recent tweets */
+.recent-tweets .tweet-actions {
+  display: none !important;
 }
