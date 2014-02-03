@@ -59,6 +59,21 @@ s, .pretty-link:hover s, .pretty-link:focus s, .stream-item-activity-me .latest-
   color: #fff !important;
 }
 
+/* Background styles */
+.dropdown-menu li > a:hover, 
+.dropdown-menu li > a:focus, 
+.dropdown-menu .dropdown-link:hover, 
+.dropdown-menu .dropdown-link:focus, 
+.dropdown-menu li:hover .dropdown-link, 
+.dropdown-menu li:focus .dropdown-link, 
+.dropdown-menu .typeahead-recent-search-item.selected, 
+.dropdown-menu .typeahead-saved-search-item.selected, 
+.dropdown-menu .selected a, 
+.dropdown-menu .dropdown-link.selected {
+  background-color: #54acef !important;
+  color: #fff !important;
+}
+
 
 /*
  * Buttons
