@@ -22,10 +22,12 @@
  */
 
 /* Prevent user backgrounds */
-body {
+/* We scope this to the .logged-in so that iframes in Chrome don't inherit the background change */
+body.logged-in {
   background-image: none !important;
   background-color: #fafafa !important;
 }
+
 
 /*
  * Reset theme styles
@@ -77,6 +79,13 @@ s, .pretty-link:hover s, .pretty-link:focus s, .stream-item-activity-me .latest-
   color: #fff !important;
 }
 
+/* Move style overrides for embeds */
+.u-textInheritAll, 
+.u-textInheritAll:hover, 
+.u-textInheritAll:focus, 
+.u-textInheritAll:active {
+  color: inherit !important;
+}
 
 /*
  * Buttons
