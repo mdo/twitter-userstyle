@@ -43,7 +43,10 @@ s, .pretty-link:hover s, .pretty-link:focus s, .stream-item-activity-me .latest-
 /* Undo the overrides of the giant block above */
 .tweet .context .pretty-link s,
 .tweet .context .pretty-link b,
-.Footer-link {
+.Footer-link,
+.stream-item-activity-me .latest-tweet .tweet-row, 
+.stream-item-activity-me .latest-tweet .tweet-row a,
+.stream-item-activity-me .latest-tweet .tweet-row b {
   color: #999 !important;
 }
 .profile-header .profile-card-inner h1,
