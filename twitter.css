@@ -621,3 +621,12 @@ s, .pretty-link:hover s, .pretty-link:focus s, .stream-item-activity-me .latest-
 .recent-tweets .tweet-actions {
   display: none !important;
 }
+
+/*
+ * Settings page
+ */
+
+/* hide the mini profile from dashbaord on settings pages */
+.wrapper-settings .mini-profile {
+  display: none;
+}
