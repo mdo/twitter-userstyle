@@ -45,6 +45,7 @@ I've disabled issues on this repository. If you'd like to help, submit a pull re
 #### With userstyle extension
 
 * Chrome: https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en
+* Firefox: https://addons.mozilla.org/en-US/firefox/addon/stylish/ (be sure to place the CSS inside the `@-moz-document domain("twitter.com")` block)
 * Safari: http://code.grid.in.th/
 
 Copy-pasta the styles from `twitter.css` into a new userstyle in your favorite browser. Be sure to specify that it apply to sites beginning with `https://twitter.com`.
