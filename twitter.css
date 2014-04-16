@@ -262,6 +262,10 @@ s, .pretty-link:hover s, .pretty-link:focus s, .stream-item-activity-me .latest-
 .wrapper {
   width: 894px !important;
 }
+/* Three-column wrapper */
+body.three-col .wrapper {
+  width: 1190px !important;
+}
 /* Reiterate to keep permalinks from becoming too wide */
 .wrapper-permalink {
   width: 592px !important;
