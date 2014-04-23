@@ -643,3 +643,47 @@ body.three-col .wrapper {
   line-height: 22px;
 }
 
+
+/* Dashboard Profile Card */
+
+.DashboardProfileCard-screennameLink {
+  color: #66757f !important;
+}
+
+.DashboardProfileCard-stats {
+  padding: 10px !important;
+}
+
+.DashboardProfileCard-statLabel,
+.DashboardProfileCard-statValue {
+  text-align: left !important;
+}
+
+.DashboardProfileCard-statLabel,
+.DashboardProfileCard-stat:hover .DashboardProfileCard-statLabel {
+  font-size: 10px !important;
+  color: #99aab5 !important;
+}
+
+.DashboardProfileCard-statValue {
+  color: #66757f !important;
+  font-size: 14px !important;
+}
+.DashboardProfileCard-statValue:hover {
+  color: #55acee !important;
+}
+
+.module .tweet-box {
+  background-color: #f9f9f9 !important;
+  border-color: #E6E6E6 !important;
+}
+
+.DashboardProfileCard-tweetbox .tweet-box {
+  background-color: #fff !important;
+  border-color: #E6E6E6 !important;
+}
+
+#tweet-box-mini-home-profile {
+  font-size: 13px;
+}
+
